@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Mi primera pagina</title>
+		<link rel="stylesheet" href="css/styleRoot.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>Mi page</header>
+		<header class="titulo">Mi page</header>
 		<nav>
 			<ul>
 				<li><a href="#inicio">Inicio</a></li>
@@ -17,7 +19,7 @@
 		<main id="inicio">
 			<h1>Hola, mundo web</h1>
 		</main>
-		<section>
+		<section class="section-all">
 			<p>Esta pagina la escribi yoooooo!!!!</p>
 		</section>
 		<section id="pasos">
@@ -36,6 +38,67 @@
 					</ul>
 				</li>
 			</ul>
+		</section>
+		<section>
+			<table>
+				<caption>Horario del laboratorio</caption>
+				<thead>	
+					<tr>
+						<th colspan="3">Primer semestre</th>
+					</tr>
+					<tr>
+						<th scope="col">Dia</th>
+						<th scope="col">Hora</th>
+						<th scope="col">Aula</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lunes</td>
+						<td>08:00</td>
+						<td>Lab 2</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Lunes</td>
+						<td>08:00</td>
+						<td>Web1</td>
+					</tr>
+					<tr>
+						<td>10:00</td>
+						<td>Calculo</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<form action="procesar"	method="post">
+
+				<p>Turno (elige uno):</p>
+				<input type="radio" id="m" name="turno" value="maniana">
+				<label for="m">Maniana</label>
+				<input type="radio" id="t" name="turno" value="tarde">
+				<label for="t">Tarde</label>
+				<br>
+				<input type="checkbox" id="acepto" name="acepto">
+				<input type="checkbox" id="acepto" name="acepto">
+				<label for="acepto">Acepto los termino</label>
+				<input type="checkbox" id="acepto" name="acepto">
+				<input type="checkbox" id="acepto" name="acepto">
+				
+				<label for"depto">Departamento</label>
+				<select id="depto" name="depto">
+					<option value="">---Elige---</option>
+					<option value="lp">La Paz</option>
+					<option value="cbba">Cochabamba</option>
+				</select>
+				<br>
+				<br>
+				<label for="msj">Tu mensage</label>
+				<textarea id="msj" name="msj" rows="4"></textarea>
+				<br>
+				<br>
+				<button type="submit">Enviar</button>
+			</form>	
 		</section>
 		<footer>
 			<h3> celular: 67128003 </h3>
